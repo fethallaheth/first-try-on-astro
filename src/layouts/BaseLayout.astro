@@ -1,0 +1,30 @@
+---
+import Navigation from '../components/Navigation.astro';
+import Header from '../components/header.astro';
+import '../styles/global.css';
+import Hamburger from '../components/Hamburger.astro';
+import Footer from '../components/footer.astro';
+
+---
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>first-touch</title>
+	</head>
+	<body>
+		<Header />
+
+		<h1>this is my first touch with astro</h1>
+		<ul>
+			
+		  </ul>
+          <slot/>
+		  <Footer/>
+		  <script>
+			import "../scripts/menu.js"
+		  </script>
+	</body>
+</html>
